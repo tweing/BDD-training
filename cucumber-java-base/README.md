@@ -7,20 +7,6 @@ you how to install and run Cucumber!
 There is a single feature file with one scenario. The scenario has three steps,
 two of them pending. See if you can make them all pass!
 
-## Get the code
-
-Git:
-
-    git clone https://github.com/cucumber/cucumber-java-skeleton.git
-    cd cucumber-java-skeleton
-
-Subversion:
-
-    svn checkout https://github.com/cucumber/cucumber-java-skeleton/trunk cucumber-java-skeleton
-    cd cucumber-java-skeleton
-
-Or [download a zip](https://github.com/cucumber/cucumber-java-skeleton/archive/main.zip) file.
-
 ## Use Maven
 
 Open a command window and run:

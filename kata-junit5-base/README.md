@@ -34,14 +34,14 @@ _When_ they print their bank statement
 _Then_ they would see:
 
 ```gherkin
-Date       || Amount || Balance
-14/01/2012 || -500   || 2500
-13/01/2012 || 2000   || 3000
-10/01/2012 || 1000   || 1000
+Date       | Amount | Balance
+14/01/2012 | -500   | 2500
+13/01/2012 | 2000   | 3000
+10/01/2012 | 1000   | 1000
 ```
 
 ## Notes
 * We're using ints for the money amounts to keep the auxiliaries as simple as possible. In a real system, we would always use a datatype with guaranteed arbitrary precision, but doing so here would distract from the main purpose of the exercise.
 * Don't worry about spacing and indentation in the statement output. (You could instruct your acceptance test to ignore whitespace if you wanted to.)
-* Use the acceptance test to guide your progress towards the solution. Sandro does this by making all unimplemented methods throw an exception, so that he can immediately see what remains to be implemented when he runs the acceptance test.
+* Use the acceptance test to guide your progress towards the solution. As a hint, make all unimplemented methods throw an exception, so that you can immediately see what remains to be implemented when running the acceptance test.
 * When in doubt, go for the simplest solution!

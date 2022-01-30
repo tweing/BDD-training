@@ -1,10 +1,6 @@
 package com.codurance.skeleton;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StepDefinitions {
 
@@ -15,13 +11,4 @@ public class StepDefinitions {
         belly.eat(cukes);
     }
 
-    @When("I wait {int} hour")
-    public void iWaitHour(int hours) {
-        belly.iWait(hours);
-    }
-
-    @Then("my belly should growl")
-    public void myBellyShouldGrowl() {
-        assertEquals(belly.hasGrowled(), true);
-    }
 }
