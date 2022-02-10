@@ -1,6 +1,12 @@
 plugins {
     id "java"
 }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.8.2"))
     testImplementation(platform("io.cucumber:cucumber-bom:7.2.3"))
@@ -13,7 +19,6 @@ dependencies {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 

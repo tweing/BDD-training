@@ -1,4 +1,4 @@
-package com.codurance.bank;
+package com.codurance;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -27,8 +27,8 @@ public class TestExample {
 //        10/01/2012 | 1000   | 1000
 
         // Arrange
-        var printerMock = Mockito.mock(Printer.class);
-        var sut = new Account(printerMock);
+        Printer printerMock = Mockito.mock(Printer.class);
+        AccountService sut = new Account(printerMock);
         sut.deposit(1000); // 1000 on 10-01-2012
         sut.deposit(2000); // 2000 on 13-01-2012
         sut.withdraw(500); // 500 on 14-01-2012
